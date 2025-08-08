@@ -1,7 +1,7 @@
 # Detection-Chagas-Disease
 This repository is about my PhD.
 
-# Python example code for the George B. Moody PhysioNet Challenge 2025
+## Python example code for the George B. Moody PhysioNet Challenge 2025
 
 ## What's in this repository?
 
