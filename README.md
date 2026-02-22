@@ -1,192 +1,208 @@
-# Detection-Chagas-Disease
-This repository is about my PhD.
+# Detection-Chagas-Disease -- PhD Thesis Project
 
-## Python example code for the George B. Moody PhysioNet Challenge 2025
+This repository contains the source code and experiments developed
+during my PhD research focused on the automatic detection and
+classification of Chagas disease using electrocardiogram (ECG) signals,
+following the guidelines and structure proposed by the George B. Moody
+PhysioNet Challenge 2025.
 
-## What's in this repository?
+This project is academically oriented and extends the Challenge proposal
+with methodological, experimental, and analytical contributions
+developed as part of my doctoral thesis.
 
-This repository contains a simple example that illustrates how to format a Python entry for the [George B. Moody PhysioNet Challenge 2025](https://physionetchallenges.org/2025/). If you are participating in the 2025 Challenge, then we recommend using this repository as a template for your entry. You can remove some of the code, reuse other code, and add new code to create your entry. You do not need to use the models, features, and/or libraries in this example for your entry. We encourage a diversity of approaches to the Challenges.
+------------------------------------------------------------------------
 
-For this example, we implemented a random forest model with several simple features. (This simple example is **not** designed to perform well, so you should **not** use it as a baseline for your approach's performance.) You can try it by running the following commands on the Challenge training set. If you are using a relatively recent personal computer, then you should be able to run these commands from start to finish on a small subset (1000 records) of the training data in a few minutes or less.
+## 🧠 About This Research
 
-## How do I run these scripts?
+This work investigates artificial intelligence methods for detecting
+cardiac abnormalities associated with Chagas disease using ECG signals.
 
-First, you can download and create data for these scripts by following the [instructions](https://github.com/physionetchallenges/python-example-2025?tab=readme-ov-file#how-do-i-create-data-for-these-scripts) in the following section.
+The main goals of this research are:
 
-Second, you can install the dependencies for these scripts by creating a Docker image (see below) or [virtual environment](https://docs.python.org/3/library/venv.html) and running
+-   Develop robust AI models for Chagas disease detection\
+-   Evaluate different signal preprocessing strategies\
+-   Compare classical machine learning and deep learning approaches\
+-   Ensure reproducibility following Challenge submission standards\
+-   Analyze model interpretability and generalization across datasets
+
+⚠️ This repository is part of an ongoing PhD thesis and may contain
+experimental components under continuous development.
+
+------------------------------------------------------------------------
+
+## 📂 Repository Structure
+
+    ├── train_model.py
+    ├── run_model.py
+    ├── team_code.py
+    ├── helper_code.py
+    ├── requirements.txt
+    ├── notebooks/
+    └── README.md
+
+### Root directory (Challenge-required scripts)
+
+The following scripts follow the official submission format and must
+remain in the root directory:
+
+-   `train_model.py` -- Script used to train the model\
+-   `run_model.py` -- Script used to run inference\
+-   `team_code.py` -- Main implementation (model training, loading,
+    inference)\
+-   `helper_code.py` -- Utility functions
+
+These scripts are structured to be compatible with the Challenge
+evaluation pipeline.
+
+------------------------------------------------------------------------
+
+## 📓 Notebooks
+
+All experimental analyses, exploratory studies, preprocessing
+validation, and intermediate experiments are located in the:
+
+    notebooks/
+
+These notebooks include:
+
+-   Signal preprocessing experiments\
+-   Feature engineering studies\
+-   Model comparison experiments\
+-   Validation strategies\
+-   Performance analysis and visualization
+
+The notebooks were used during research development and may include
+exploratory code not intended for final submission.
+
+------------------------------------------------------------------------
+
+## 🗂 Dataset Access
+
+The datasets used in this research follow the Challenge guidelines and
+include:
+
+-   CODE-15%\
+-   SaMi-Trop\
+-   PTB-XL
+
+These datasets were processed according to the official Challenge
+requirements (WFDB formatting, header adjustments, label integration,
+etc.).
+
+⚠️ Important:
+
+-   The processed dataset is **not included in this repository**.\
+-   The data is stored in a private Google Drive.\
+-   Access must be requested directly from the author.
+
+All shared data has already been preprocessed according to the Challenge
+specifications and is ready to be used with the provided scripts.
+
+------------------------------------------------------------------------
+
+## ⚙️ How to Run the Project
+
+### 1️⃣ Install dependencies
+
+It is recommended to create a virtual environment and run:
 
     pip install -r requirements.txt
 
-You can train your model by running
+------------------------------------------------------------------------
+
+### 2️⃣ Train the model
 
     python train_model.py -d training_data -m model
 
-where
+Where:
 
-- `training_data` (input; required) is a folder with the training data files, which must include the labels; and
-- `model` (output; required) is a folder for saving your model.
+-   `training_data` → folder containing processed WFDB files with
+    labels\
+-   `model` → folder where the trained model will be saved
 
-You can run your trained model by running
+------------------------------------------------------------------------
+
+### 3️⃣ Run inference
 
     python run_model.py -d holdout_data -m model -o holdout_outputs
 
-where
+Where:
 
-- `holdout_data` (input; required) is a folder with the holdout data files, which will not necessarily include the labels;
-- `model` (input; required) is a folder for loading your model; and
-- `holdout_outputs` (output; required) is a folder for saving your model outputs.
+-   `holdout_data` → folder containing WFDB files (labels optional)\
+-   `model` → trained model directory\
+-   `holdout_outputs` → folder for predictions
 
-The [Challenge website](https://physionetchallenges.org/2025/#data) provides a training database with a description of the contents and structure of the data files.
+------------------------------------------------------------------------
 
-You can evaluate your model by pulling or downloading the [evaluation code](https://github.com/physionetchallenges/evaluation-2025) and running
+### 4️⃣ Evaluate the model
+
+Example:
 
     python evaluate_model.py -d holdout_data -o holdout_outputs -s scores.csv
 
-where
+------------------------------------------------------------------------
 
-- `holdout_data`(input; required) is a folder with labels for the holdout data files, which must include the labels;
-- `holdout_outputs` (input; required) is a folder containing files with your model's outputs for the data; and
-- `scores.csv` (output; optional) is file with a collection of scores for your model.
+## 🐳 Running with Docker
 
-You can use the provided training set for the `training_data` and `holdout_data` files, but we will use different datasets for the validation and test sets, and we will not provide the labels to your code.
+Build the image:
 
-## How do I create data for these scripts?
+    docker build -t detection-chagas .
 
-You can use the scripts in this repository to convert the [CODE-15% dataset](https://zenodo.org/records/4916206), the [SaMi-Trop dataset](https://zenodo.org/records/4905618), and the [PTB-XL dataset](https://physionet.org/content/ptb-xl/) to [WFDB](https://wfdb.io/) format.
+Run:
 
-Please see the [data](https://physionetchallenges.org/2025/#data) section of the website for more information about the Challenge data.
+    docker run -it \
+      -v /path/to/model:/challenge/model \
+      -v /path/to/training_data:/challenge/training_data \
+      -v /path/to/holdout_data:/challenge/holdout_data \
+      -v /path/to/outputs:/challenge/holdout_outputs \
+      detection-chagas bash
 
-#### CODE-15% dataset
+------------------------------------------------------------------------
 
-These instructions use `code15_input` as the path for the input data files and `code15_output` for the output data files, but you can replace them with the absolute or relative paths for the files on your machine.
+## 🔬 Research Contributions
 
-1. Download and unzip one or more of the `exam_part` files and the `exams.csv` file in the [CODE-15% dataset](https://zenodo.org/records/4916206).
+This PhD work extends baseline approaches by:
 
-2. Download and unzip the Chagas labels, i.e., the [`code15_chagas_labels.csv`](https://physionetchallenges.org/2025/data/code15_chagas_labels.zip) file.
+-   Investigating advanced preprocessing techniques for ECG signals\
+-   Evaluating deep neural network architectures\
+-   Studying class imbalance strategies\
+-   Performing cross-dataset validation\
+-   Analyzing model robustness\
+-   Exploring explainability techniques for medical AI
 
-3. Convert the CODE-15% dataset to WFDB format, with the available demographics information and Chagas labels in the WFDB header file, by running
+This repository may evolve as the thesis progresses.
 
-        python prepare_code15_data.py \
-            -i code15_input/exams_part0.hdf5 code15_input/exams_part1.hdf5 \
-            -d code15_input/exams.csv \
-            -l code15_input/code15_chagas_labels.csv \
-            -o code15_output/exams_part0 code15_output/exams_part1
+------------------------------------------------------------------------
 
-Each `exam_part` file in the [CODE-15% dataset](https://zenodo.org/records/4916206) contains approximately 20,000 ECG recordings. You can include more or fewer of these files to increase or decrease the number of ECG recordings, respectively. You may want to start with fewer ECG recordings to debug your code.
+## 📚 Academic Context
 
-#### SaMi-Trop dataset
+This project is part of a doctoral research in Electrical Engineering
+focused on:
 
-These instructions use `samitrop_input` as the path for the input data files and `samitrop_output` for the output data files, but you can replace them with the absolute or relative paths for the files on your machine.
+-   Biomedical signal processing\
+-   Artificial intelligence applied to cardiology\
+-   Automated detection of Chagas cardiomyopathy
 
-1. Download and unzip `exams.zip` file and the `exams.csv` file in the [SaMi-Trop dataset](https://zenodo.org/records/4905618).
+The work contributes to computational tools for improving early
+diagnosis in endemic regions.
 
-2. Download and unzip the Chagas labels, i.e., the [`samitrop_chagas_labels.csv`](https://physionetchallenges.org/2025/data/samitrop_chagas_labels.zip) file.
+------------------------------------------------------------------------
 
-3. Convert the SaMi-Trop dataset to WFDB format, with the available demographics information and Chagas labels in the WFDB header file, by running
+## 📩 Dataset Access Request
 
-        python prepare_samitrop_data.py \
-            -i samitrop_input/exams.hdf5 \
-            -d samitrop_input/exams.csv \
-            -l samitrop_input/samitrop_chagas_labels.csv \
-            -o samitrop_output
+If you need access to the processed dataset used in this research,
+please contact the repository author to request permission.
 
-#### PTB-XL dataset
+The dataset:
 
-These instructions use `ptbxl_input` as the path for the input data files and `ptbxl_output` for the output data files, but you can replace them with the absolute or relative paths for the files on your machine. We are using the `records500` folder, which has a 500Hz sampling frequency, but you can also try the `records100` folder, which has a 100Hz sampling frequency.
+-   Is stored in Google Drive\
+-   Has already been processed according to Challenge specifications\
+-   Is organized in WFDB format\
+-   Includes integrated demographic and label metadata
 
-1. Download and, if necessary, unzip the [PTB-XL dataset](https://physionet.org/content/ptb-xl/).
+------------------------------------------------------------------------
 
-2. Update the WFDB files with the available demographics information and Chagas labels  by running
+## ⚠️ Disclaimer
 
-        python prepare_ptbxl_data.py \
-            -i ptbxl_input/records500/ \
-            -d ptbxl_input/ptbxl_database.csv \
-            -o ptbxl_output
-
-## Which scripts I can edit?
-
-Please edit the following script to add your code:
-
-* `team_code.py` is a script with functions for training and running your trained model.
-
-Please do **not** edit the following scripts. We will use the unedited versions of these scripts when running your code:
-
-* `train_model.py` is a script for training your model.
-* `run_model.py` is a script for running your trained model.
-* `helper_code.py` is a script with helper functions that we used for our code. You are welcome to use them in your code.
-
-These scripts must remain in the root path of your repository, but you can put other scripts and other files elsewhere in your repository.
-
-## How do I train, save, load, and run my model?
-
-To train and save your model, please edit the `train_model` function in the `team_code.py` script. Please do not edit the input or output arguments of this function.
-
-To load and run your trained model, please edit the `load_model` and `run_model` functions in the `team_code.py` script. Please do not edit the input or output arguments of these functions.
-
-## How do I run these scripts in Docker?
-
-Docker and similar platforms allow you to containerize and package your code with specific dependencies so that your code can be reliably run in other computational environments.
-
-To increase the likelihood that we can run your code, please [install](https://docs.docker.com/get-docker/) Docker, build a Docker image from your code, and run it on the training data. To quickly check your code for bugs, you may want to run it on a small subset of the training data, such as 1000 records.
-
-If you have trouble running your code, then please try the follow steps to run the example code.
-
-1. Create a folder `example` in your home directory with several subfolders.
-
-        user@computer:~$ cd ~/
-        user@computer:~$ mkdir example
-        user@computer:~$ cd example
-        user@computer:~/example$ mkdir training_data holdout_data model holdout_outputs
-
-2. Download the training data from the [Challenge website](https://physionetchallenges.org/2025/#data). Put some of the training data in `training_data` and `holdout_data`. You can use some of the training data to check your code (and you should perform cross-validation on the training data to evaluate your algorithm).
-
-3. Download or clone this repository in your terminal.
-
-        user@computer:~/example$ git clone https://github.com/physionetchallenges/python-example-2025.git
-
-4. Build a Docker image and run the example code in your terminal.
-
-        user@computer:~/example$ ls
-        holdout_data  holdout_outputs  model  python-example-2025  training_data
-
-        user@computer:~/example$ cd python-example-2025/
-
-        user@computer:~/example/python-example-2025$ docker build -t image .
-
-        Sending build context to Docker daemon  [...]kB
-        [...]
-        Successfully tagged image:latest
-
-        user@computer:~/example/python-example-2025$ docker run -it -v ~/example/model:/challenge/model -v ~/example/holdout_data:/challenge/holdout_data -v ~/example/holdout_outputs:/challenge/holdout_outputs -v ~/example/training_data:/challenge/training_data image bash
-
-        root@[...]:/challenge# ls
-            Dockerfile             holdout_outputs        run_model.py
-            evaluate_model.py      LICENSE                training_data
-            helper_code.py         README.md      
-            holdout_data           requirements.txt
-
-        root@[...]:/challenge# python train_model.py -d training_data -m model -v
-
-        root@[...]:/challenge# python run_model.py -d holdout_data -m model -o holdout_outputs -v
-
-        root@[...]:/challenge# python evaluate_model.py -d holdout_data -o holdout_outputs
-        [...]
-
-        root@[...]:/challenge# exit
-        Exit
-
-## What else do I need?
-
-This repository does not include code for evaluating your entry. Please see the [evaluation code repository](https://github.com/physionetchallenges/evaluation-2025) for code and instructions for evaluating your entry using the Challenge scoring metric.
-
-## How do I learn more? How do I share more?
-
-Please see the [Challenge website](https://physionetchallenges.org/2025/) for more details. Please post questions and concerns on the [Challenge discussion forum](https://groups.google.com/forum/#!forum/physionet-challenges). Please do not make pull requests, which may share information about your approach.
-
-## Useful links
-
-* [Challenge website](https://physionetchallenges.org/2025/)
-* [MATLAB example code](https://github.com/physionetchallenges/matlab-example-2025)
-* [Evaluation code](https://github.com/physionetchallenges/evaluation-2025)
-* [Frequently asked questions (FAQ) for this year's Challenge](https://physionetchallenges.org/2025/faq/)
-* [Frequently asked questions (FAQ) about the Challenges in general](https://physionetchallenges.org/faq/)
+This repository is part of an academic PhD thesis and is intended for
+research purposes only. It is not a clinical diagnostic tool.
