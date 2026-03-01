@@ -1,0 +1,31 @@
+{
+  "total": 5,
+  "success": 5,
+  "errors": 0,
+  "by_dataset": {
+    "CODE-15%": 5
+  },
+  "by_label": {
+    "0": 5,
+    "1": 0
+  },
+  "records_processed": [
+    265341,
+    483197,
+    356282,
+    1411959,
+    1628260
+  ],
+  "records_failed": [],
+  "duration_seconds": 5.823901,
+  "config": {
+    "target_fs": 400,
+    "ecg_length": 4096,
+    "bandpass": [
+      1.0,
+      47.0
+    ],
+    "normalization": "zscore",
+    "base_data_path": "/media/mpsilva-lx/Dados/Recursos"
+  }
+}

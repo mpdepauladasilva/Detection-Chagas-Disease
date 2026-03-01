@@ -1,0 +1,126 @@
+{
+    "I": {
+        "raw_time": {
+            "mean": -0.003966257668711655,
+            "std": 0.45281441853640353,
+            "rms": 0.4528317886747305,
+            "ptp": 3.137
+        },
+        "processed_time": {
+            "mean": 0.0,
+            "std": 0.0,
+            "rms": 0.0,
+            "ptp": 0.0
+        },
+        "raw_freq": {
+            "baseline_energy": 0.00012962727912774704,
+            "physiological_energy": 0.20922982698626943,
+            "highfreq_noise_energy": 0.0002297116264605431,
+            "powerline_50hz": 6.352604349595109e-06,
+            "powerline_60hz": 4.3970768266463465e-06
+        },
+        "processed_freq": {
+            "baseline_energy": 0.0,
+            "physiological_energy": 0.0,
+            "highfreq_noise_energy": 0.0,
+            "powerline_50hz": 0.0,
+            "powerline_60hz": 0.0
+        },
+        "snr_raw": 6.441852855086857,
+        "snr_processed": 0.0,
+        "correlation_raw_processed": NaN
+    },
+    "II": {
+        "raw_time": {
+            "mean": -0.003935923653715062,
+            "std": 0.3213861889774601,
+            "rms": 0.32141028913285197,
+            "ptp": 2.224
+        },
+        "processed_time": {
+            "mean": 0.0,
+            "std": 0.0,
+            "rms": 0.0,
+            "ptp": 0.0
+        },
+        "raw_freq": {
+            "baseline_energy": 7.472929542002472e-05,
+            "physiological_energy": 0.10443306417727982,
+            "highfreq_noise_energy": 0.00018302673102928561,
+            "powerline_50hz": 5.2947318714220515e-06,
+            "powerline_60hz": 4.773809386469724e-06
+        },
+        "processed_freq": {
+            "baseline_energy": 0.0,
+            "physiological_energy": 0.0,
+            "highfreq_noise_energy": 0.0,
+            "powerline_50hz": 0.0,
+            "powerline_60hz": 0.0
+        },
+        "snr_raw": 6.274113282583942,
+        "snr_processed": 0.0,
+        "correlation_raw_processed": NaN
+    },
+    "V1": {
+        "raw_time": {
+            "mean": -0.006399795501022493,
+            "std": 0.5950808420731998,
+            "rms": 0.5951152543709525,
+            "ptp": 3.965
+        },
+        "processed_time": {
+            "mean": 0.0,
+            "std": 0.0,
+            "rms": 0.0,
+            "ptp": 0.0
+        },
+        "raw_freq": {
+            "baseline_energy": 0.00022400997758475935,
+            "physiological_energy": 0.3505316537719417,
+            "highfreq_noise_energy": 0.00010184128803553294,
+            "powerline_50hz": 7.557553469295805e-06,
+            "powerline_60hz": 1.508650513959839e-06
+        },
+        "processed_freq": {
+            "baseline_energy": 0.0,
+            "physiological_energy": 0.0,
+            "highfreq_noise_energy": 0.0,
+            "powerline_50hz": 0.0,
+            "powerline_60hz": 0.0
+        },
+        "snr_raw": 7.338529390599009,
+        "snr_processed": 0.0,
+        "correlation_raw_processed": NaN
+    },
+    "V5": {
+        "raw_time": {
+            "mean": -0.01070620313565099,
+            "std": 1.1697961848511904,
+            "rms": 1.1698451764562618,
+            "ptp": 8.211
+        },
+        "processed_time": {
+            "mean": 0.0,
+            "std": 0.0,
+            "rms": 0.0,
+            "ptp": 0.0
+        },
+        "raw_freq": {
+            "baseline_energy": 0.000668159641069626,
+            "physiological_energy": 1.4035891802973735,
+            "highfreq_noise_energy": 0.001365071701931435,
+            "powerline_50hz": 5.0529141129449615e-05,
+            "powerline_60hz": 5.179444152851722e-07
+        },
+        "processed_freq": {
+            "baseline_energy": 0.0,
+            "physiological_energy": 0.0,
+            "highfreq_noise_energy": 0.0,
+            "powerline_50hz": 0.0,
+            "powerline_60hz": 0.0
+        },
+        "snr_raw": 6.019629652072053,
+        "snr_processed": 0.0,
+        "correlation_raw_processed": NaN
+    }
+}

@@ -5,3 +5,4 @@ scikit-learn
 wfdb
 h5py
 pandas
+PyWavelets
