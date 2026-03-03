@@ -1,0 +1,121 @@
+{
+  "record_id": "265341",
+  "timestamp": "2026-03-02T14:39:31.974282",
+  "config": {
+    "target_fs": 400,
+    "ecg_length": 4000,
+    "normalization": "robust_instance",
+    "filters": {
+      "notch": [
+        50,
+        60
+      ],
+      "bandpass": [
+        0.5,
+        45.0
+      ]
+    }
+  },
+  "stages": [
+    {
+      "name": "Raw",
+      "shape": [
+        12,
+        2934
+      ],
+      "energy": 0.08718709898318563,
+      "amp_max": 3.225,
+      "fs": 500
+    },
+    {
+      "name": "After NaN",
+      "shape": [
+        12,
+        2934
+      ],
+      "energy": 0.08718709898318563,
+      "amp_max": 3.225,
+      "fs": 500
+    },
+    {
+      "name": "After Resample",
+      "shape": [
+        12,
+        2348
+      ],
+      "energy": 0.08727635836305289,
+      "amp_max": 3.2319925169450463,
+      "fs": 400
+    },
+    {
+      "name": "After Harmonize",
+      "shape": [
+        12,
+        2348
+      ],
+      "energy": 0.08727635836305289,
+      "amp_max": 3.2319925169450463,
+      "fs": 400
+    },
+    {
+      "name": "After Padding",
+      "shape": [
+        12,
+        4748
+      ],
+      "energy": 0.09184077129122224,
+      "amp_max": 3.2319925169450463,
+      "fs": 400
+    },
+    {
+      "name": "After Notch",
+      "shape": [
+        12,
+        4748
+      ],
+      "energy": 0.09169669687789074,
+      "amp_max": 3.2077203537717347,
+      "fs": 400
+    },
+    {
+      "name": "After Bandpass",
+      "shape": [
+        12,
+        4748
+      ],
+      "energy": 0.09107057938760504,
+      "amp_max": 3.1790148646852137,
+      "fs": 400
+    },
+    {
+      "name": "After Unpad",
+      "shape": [
+        12,
+        2348
+      ],
+      "energy": 0.08599303554327281,
+      "amp_max": 3.1016242031244365,
+      "fs": 400
+    },
+    {
+      "name": "After Length",
+      "shape": [
+        12,
+        4000
+      ],
+      "energy": 0.05047791186390114,
+      "amp_max": 3.1016242031244365,
+      "fs": 400
+    },
+    {
+      "name": "After Normalization",
+      "shape": [
+        12,
+        4000
+      ],
+      "energy": 5.288989469568488,
+      "amp_max": 5.0,
+      "fs": 400
+    }
+  ]
+}
