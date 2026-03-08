@@ -1,21 +1,39 @@
-MIT License
+STRICT EDUCATIONAL AND RECIPROCAL SOURCE-AVAILABLE LICENSE
 
 Copyright (c) 2025 Mateus
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. GRANT OF LICENSE
+Permission is hereby granted, free of charge, to any person obtaining a copy of this 
+software and associated documentation files (the "Software"), to use, study, and 
+modify the Software strictly for non-commercial, educational, and personal 
+research purposes only.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. RESTRICTIONS ON USE
+Cloning, copying, or using this Software for any purpose outside of a strictly 
+educational context is prohibited. This includes, but is not limited to:
+- Use within a commercial, corporate, or professional environment.
+- Use for-profit or to generate any form of revenue.
+- Use for the provision of services to third parties.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+3. MANDATORY RECIPROCITY (STRICT COPYLEFT)
+If you modify, transform, or build upon the Software, you MUST distribute your 
+contributions under the exact same license terms. You are legally required to:
+- Make the source code of your modifications publicly available.
+- Include a copy of this original license in all copies or substantial portions 
+  of the Software.
+- Provide attribution to the original author (Mateus).
+
+4. PROHIBITION OF ILLEGAL DISTRIBUTION
+Any unauthorized cloning, distribution, or sub-licensing of this Software for 
+commercial exploitation or private "closed-source" development is a violation of 
+copyright law. The author reserves all rights to pursue legal action against 
+unauthorized use.
+
+5. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
 SOFTWARE.

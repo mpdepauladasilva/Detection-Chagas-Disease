@@ -1,0 +1,126 @@
+{
+    "I": {
+        "time_raw": {
+            "mean": -0.003917918994831021,
+            "std": 0.15150156255776906,
+            "rms": 0.15155221392871723,
+            "ptp": 1.3419134795506715
+        },
+        "time_processed": {
+            "mean": -0.2604118287563324,
+            "std": 2.6696877479553223,
+            "rms": 2.682358503341675,
+            "ptp": 10.0
+        },
+        "freq_raw": {
+            "baseline_energy": 0.0005637884774022993,
+            "physio_energy": 0.020413944885662554,
+            "highfreq_energy": 3.6789568096582075e-05,
+            "baseline_ratio": 0.027617797754528592,
+            "highfreq_ratio": 0.0018021773978946476
+        },
+        "freq_processed": {
+            "baseline_energy": 0.17742621712386608,
+            "physio_energy": 8.08323947367171,
+            "highfreq_energy": 0.22450270819263096,
+            "baseline_ratio": 0.021949889952199268,
+            "highfreq_ratio": 0.02777385337229343
+        },
+        "snr_raw_band": 554.7332738277054,
+        "snr_processed_band": 36.00508509984283,
+        "correlation_morphology": 0.1031627753512882
+    },
+    "II": {
+        "time_raw": {
+            "mean": 0.017957678058614427,
+            "std": 0.2774381702729194,
+            "rms": 0.27801873412711287,
+            "ptp": 2.2370985019399727
+        },
+        "time_processed": {
+            "mean": -0.06983812153339386,
+            "std": 2.39892315864563,
+            "rms": 2.3999392986297607,
+            "ptp": 10.0
+        },
+        "freq_raw": {
+            "baseline_energy": 0.0059439703983084095,
+            "physio_energy": 0.04651503681479973,
+            "highfreq_energy": 2.912510627161677e-05,
+            "baseline_ratio": 0.12778597046186807,
+            "highfreq_ratio": 0.0006261437591921333
+        },
+        "freq_processed": {
+            "baseline_energy": 0.5349172279238701,
+            "physio_energy": 3.76726086024064,
+            "highfreq_energy": 0.04957593815788641,
+            "baseline_ratio": 0.14199102380974785,
+            "highfreq_ratio": 0.01315967751251579
+        },
+        "snr_raw_band": 1596.528819258654,
+        "snr_processed_band": 75.98968855306408,
+        "correlation_morphology": 0.005101312424637736
+    },
+    "V1": {
+        "time_raw": {
+            "mean": 0.006093525638199628,
+            "std": 0.18281649637475605,
+            "rms": 0.18291802098602694,
+            "ptp": 1.6367024084438484
+        },
+        "time_processed": {
+            "mean": -0.8815468549728394,
+            "std": 2.18227219581604,
+            "rms": 2.3536009788513184,
+            "ptp": 10.0
+        },
+        "freq_raw": {
+            "baseline_energy": 0.002475819953493164,
+            "physio_energy": 0.026196632465437502,
+            "highfreq_energy": 2.995816261088361e-05,
+            "baseline_ratio": 0.0945090561418179,
+            "highfreq_ratio": 0.0011435878720110358
+        },
+        "freq_processed": {
+            "baseline_energy": 0.4433867987245321,
+            "physio_energy": 3.463202469083626,
+            "highfreq_energy": 0.11162927557393232,
+            "baseline_ratio": 0.1280279745127272,
+            "highfreq_ratio": 0.03223296248143994
+        },
+        "snr_raw_band": 874.1487693317442,
+        "snr_processed_band": 31.024138972831995,
+        "correlation_morphology": 0.04418158441820076
+    },
+    "V5": {
+        "time_raw": {
+            "mean": -0.011017659261939818,
+            "std": 0.46505967482879224,
+            "rms": 0.4651901653812924,
+            "ptp": 3.919108587540275
+        },
+        "time_processed": {
+            "mean": 0.0,
+            "std": 0.0,
+            "rms": 0.0,
+            "ptp": 0.0
+        },
+        "freq_raw": {
+            "baseline_energy": 0.003926248570718613,
+            "physio_energy": 0.2280209183737376,
+            "highfreq_energy": 4.3256801598195015e-05,
+            "baseline_ratio": 0.017218807934521244,
+            "highfreq_ratio": 0.00018970540075731546
+        },
+        "freq_processed": {
+            "baseline_energy": 0.0,
+            "physio_energy": 0.0,
+            "highfreq_energy": 0.0,
+            "baseline_ratio": 0.0,
+            "highfreq_ratio": 0.0
+        },
+        "snr_raw_band": 5270.112648753082,
+        "snr_processed_band": 0.0,
+        "correlation_morphology": NaN
+    }
+}

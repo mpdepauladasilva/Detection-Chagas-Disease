@@ -1,0 +1,111 @@
+{
+  "record_id": "18652_hr",
+  "timestamp": "2026-03-06T23:46:07.071058",
+  "config": {
+    "target_fs": 400,
+    "ecg_length": 4000,
+    "normalization": "robust_instance",
+    "filters": {
+      "notch": [
+        50,
+        60
+      ],
+      "bandpass": [
+        0.5,
+        45.0
+      ]
+    }
+  },
+  "stages": [
+    {
+      "name": "Raw",
+      "shape": [
+        12,
+        5000
+      ],
+      "energy": 0.06544087995,
+      "amp_max": 2.39,
+      "fs": 500
+    },
+    {
+      "name": "After NaN",
+      "shape": [
+        12,
+        5000
+      ],
+      "energy": 0.06544087995,
+      "amp_max": 2.39,
+      "fs": 500
+    },
+    {
+      "name": "After Resample",
+      "shape": [
+        12,
+        4000
+      ],
+      "energy": 0.06550648015047776,
+      "amp_max": 2.3906230134621627,
+      "fs": 400
+    },
+    {
+      "name": "After Harmonize",
+      "shape": [
+        12,
+        4000
+      ],
+      "energy": 0.06550648015047776,
+      "amp_max": 2.3906230134621627,
+      "fs": 400
+    },
+    {
+      "name": "After Padding",
+      "shape": [
+        12,
+        6400
+      ],
+      "energy": 0.06573434689994158,
+      "amp_max": 2.3906230134621627,
+      "fs": 400
+    },
+    {
+      "name": "After Filter (BP+Notch)",
+      "shape": [
+        12,
+        6400
+      ],
+      "energy": 0.06718262669020655,
+      "amp_max": 3.028461665974421,
+      "fs": 400
+    },
+    {
+      "name": "After Unpad",
+      "shape": [
+        12,
+        4000
+      ],
+      "energy": 0.06364998727668854,
+      "amp_max": 2.3678837690265238,
+      "fs": 400
+    },
+    {
+      "name": "After Length",
+      "shape": [
+        12,
+        4000
+      ],
+      "energy": 0.06364998727668854,
+      "amp_max": 2.3678837690265238,
+      "fs": 400
+    },
+    {
+      "name": "After Normalization",
+      "shape": [
+        12,
+        4000
+      ],
+      "energy": 5.843325772556374,
+      "amp_max": 5.0,
+      "fs": 400
+    }
+  ]
+}
